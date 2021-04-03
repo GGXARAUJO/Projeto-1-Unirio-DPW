@@ -1,0 +1,16 @@
+div {
+    color:blue
+}
+body {
+
+    background-image: url(img/sala.jpg);
+    background-size: 100%;
+    
+
+}
+
+
+a:link {color: red;}
+a:visited {color: green;}
+a:hover {color: rgb(226, 14, 173);}
+a:active {color: orange;}
