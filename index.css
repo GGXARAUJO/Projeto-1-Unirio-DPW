@@ -1,7 +1,7 @@
 body{
 
   background-color: rgb(240, 240, 240);
-
+  
   
 }
 
@@ -33,9 +33,15 @@ a:hover {color: rgb(58, 59, 107);}
 a:active {color: orange;}
 
 
+table, th, td{
+  border-collapse: collapse;
+  border: 1px solid black;
+  font-size: 20px;
+}
 
-
-
+#conne{
+  background-image: url(img/Music_Disc_Cat_JE1_BE1.png);
+}
 
 
 .logo {
@@ -48,13 +54,20 @@ a:active {color: orange;}
 
 }
 
-#conne {
-    background-image: url(img/sala.jpg);
-    
-    
+h3{
+  color: rgb(58, 59, 107);
 }
-
-
+ 
+footer{
+  background-color: rgb(58, 59, 107) ;
+  position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   
+   color: white;
+   text-align: center;
+}
 
 p, h1, h2, h3{
 
