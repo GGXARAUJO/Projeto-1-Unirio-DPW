@@ -11,6 +11,7 @@ body{
     margin:0px;
     background-color:#EDEDED;
     list-style:none;
+    position:static;
 }
   
 #titulo li { 
@@ -26,6 +27,42 @@ body{
   
 }
 
+
+
+.discos{
+ 
+
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+  text-align: center;
+  
+  
+
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.row {
+  display: flex;
+  position: left;
+}
+
+.discos {
+  flex: 33.33%;
+  padding: 5px;
+  
+}
+
+.conhe{
+  
+margin: 50px;
+padding: 30px;
+}
+
 a:link {text-decoration: none;}
 a:link {color: red;}
 a:visited {color: rgb(172, 175, 172);}
@@ -39,15 +76,14 @@ table, th, td{
   font-size: 20px;
 }
 
-#conne{
-  background-image: url(img/Music_Disc_Cat_JE1_BE1.png);
-}
+
+
 
 
 .logo {
   
   position: relative;
-  left: 45%;
+  left: 830px;
   width: 200px;
   height: 200px;
  
@@ -56,23 +92,54 @@ table, th, td{
 
 h3{
   color: rgb(58, 59, 107);
+  font-size: 25px;
 }
  
 footer{
   background-color: rgb(58, 59, 107) ;
-  position: fixed;
+  position: static;
    left: 0;
    bottom: 0;
    width: 100%;
-   
+   height: 200px;
    color: white;
    text-align: center;
 }
 
-p, h1, h2, h3{
-
-  font-family:sans-serif;
+.letra{
+  float: right;
+  padding-right: 200px;
+  padding-top: 100px;
   
+  font-size: 30px;
+  font-family:sans-serif;
+  font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: rgb(58, 59, 107);
+    
+  
+}
+.lo{
+  position: relative;
+  right: 10px;
+  padding-bottom: 100px;
+  padding-top: 30px;
+}
+
+#img {
+  padding-left: 70px;
+  
+  width: 700px;
+  height: 450px;
+  border-radius: 300px;
+  
+}
+#titulo1{
+  padding-top: 50px;
+  padding-bottom: 100px;
+  position: relative;
+  left: 100px;
 }
  
 
