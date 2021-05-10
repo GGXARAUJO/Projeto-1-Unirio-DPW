@@ -75,10 +75,10 @@ padding: 30px;
 }
 
 a:link {text-decoration: none;}
-a:link {color: red;}
-a:visited {color: rgb(0, 0, 0);}
-a:hover {color: rgb(156, 73, 152);}
-a:active {color: orange;}
+a:link {color: rgb(121, 70, 145);}
+a:visited {color: rgb(165, 159, 167);}
+a:hover {color: rgb(75, 5, 71);}
+a:active {color: rgb(239, 253, 255);}
 
 
 table, th, td{
