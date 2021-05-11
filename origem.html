@@ -37,14 +37,58 @@
         </nav>
     </div>
     </header>
+
+    
     <div>
-        <ul class="indice">
-            <li><a href="#historia">Historia do disco de vinil</a></li>
-            <li><a href="#como">Como é feito o disco de vinil</a></li>
-            <li><a href="#declinio">Declínio</a></li>
-            <li><a href="#retorno">Retorno</a></li>
-        </ul>
+        
+        
+            
+            <h2 style="text-align:center">Multiple Slideshows</h2>
+            
+            
+            <div class="slideshow-container">
+              <div class="mySlides1">
+                <img src="img/img1.jpg" style="width:100%">
+              </div>
+            
+              <div class="mySlides1">
+                <img src="img/img2.jpg" style="width:100%">
+              </div>
+            
+              <div class="mySlides1">
+                <img src="img/img3.jpg" style="width:100%">
+              </div>
+            
+              <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+            </div>
+            
+            
+            
+            <script>
+            var slideIndex = [1,1];
+            var slideId = ["mySlides1"]
+            showSlides(1, 0);
+            showSlides(1, 1);
+            
+            function plusSlides(n, no) {
+              showSlides(slideIndex[no] += n, no);
+            }
+            
+            function showSlides(n, no) {
+              var i;
+              var x = document.getElementsByClassName(slideId[no]);
+              if (n > x.length) {slideIndex[no] = 1}    
+              if (n < 1) {slideIndex[no] = x.length}
+              for (i = 0; i < x.length; i++) {
+                 x[i].style.display = "none";  
+              }
+              x[slideIndex[no]-1].style.display = "block";  
+            }
+            </script>
+        
     </div>
+
 <div class="vinilimg">
 <h3 id="historia"  class="titulo1">Historia do Disco de vinil</h3>
 
@@ -90,20 +134,19 @@
             Entretanto, em 2014, o inesperado aconteceu.  </p>
         </div>
         <div>
-            <h3 id="retorno" class="titulo1">
-                Retorno
-            </h3>
-            <p class="letraref" >
-                O disco de vinil voltou a ganhar espaço no mercado norte-americano e se espalhou novamente pelo mundo. Apesar de nunca ter atingido as mesmas proporções que tinha no passado, o retorno fez com que gravadoras voltassem a produzir os LPs. Há quem fale que houve uma popularização do vinil no Brasil a partir de 2016, quando ele conquistou fãs e passou a ser mais usado pelos DJs. Porém, como o preço do disco ainda é pouco acessível, não se pode dizer que ele tenha um público tão grande por aqui.
-            </p>
-            
+
+        <h3 id="retorno" class="titulo1">
+            Retorno
+        </h3>
+        <p class="letraref" >
+            O disco de vinil voltou a ganhar espaço no mercado norte-americano e se espalhou novamente pelo mundo. Apesar de nunca ter atingido as mesmas proporções que tinha no passado, o retorno fez com que gravadoras voltassem a produzir os LPs. Há quem fale que houve uma popularização do vinil no Brasil a partir de 2016, quando ele conquistou fãs e passou a ser mais usado pelos DJs. Porém, como o preço do disco ainda é pouco acessível, não se pode dizer que ele tenha um público tão grande por aqui.
+        </p>
         </div>
+        
         <footer class="footer">
             <h2 >&copy; Guilherme Araujo - BSI UNIRIO - 2021</h2>
             
          </footer>
 
-        
-        
 </body>
 </html>
