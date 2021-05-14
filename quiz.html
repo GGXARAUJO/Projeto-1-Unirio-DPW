@@ -35,42 +35,7 @@
                     </li>
                 </ul>
             </nav>
-            <div class="countdown">
-            <p id="countdown"></p>
-            </div>
-    <script>
-        var end = new Date('05/15/2021 10:1 AM');
-
-var _second = 1000;
-var _minute = _second * 60;
-var _hour = _minute * 60;
-var _day = _hour * 24;
-var timer;
-
-function showRemaining() {
-    var now = new Date();
-    var distance = end - now;
-    if (distance < 0) {
-
-        clearInterval(timer);
-        document.getElementById('countdown').innerHTML = 'EXPIRED!';
-
-        return;
-    }
-    var dias = Math.floor(distance / _day);
-    var hours = Math.floor((distance % _day) / _hour);
-    var minutes = Math.floor((distance % _hour) / _minute);
-    var seconds = Math.floor((distance % _minute) / _second);
-
-    document.getElementById('countdown').innerHTML = dias + 'dias ';
-    document.getElementById('countdown').innerHTML += hours + 'hrs ';
-    document.getElementById('countdown').innerHTML += minutes + 'mins ';
-    document.getElementById('countdown').innerHTML += seconds + 'secs';
-}
-
-timer = setInterval(showRemaining, 1000);
-        </script>
-        </div>
+            
     </header>
     
    
@@ -83,7 +48,7 @@ timer = setInterval(showRemaining, 1000);
                 <input type="radio" name="generodmusical" id="genma1" value="Rock" checked>
                 <label for="genma1">Rock</label><br>
                 <input type="radio" name="generodmusical" id="genma2" value="MPB"> 
-                <label for="genma2">MPB</label><br>
+                <label for="genma2"><span class="tooltip">MPB<span class="tooltiptext">Musica Popular Brasileira</span></span></label><br>
                 <input type="radio" name="generodmusical" id="genma3" value="POP"> 
                 <label for="genma3">POP</label><br>
                 <input type="radio" name="generodmusical"  id="genma4" value="outro"> 
@@ -97,7 +62,7 @@ timer = setInterval(showRemaining, 1000);
                 <input type="radio" name="generomusical" id="genm1" value="Rock" checked>
                 <label for="genm1">Rock</label><br>
                 <input type="radio" name="generomusical" id="genm2" value="MPB"> 
-                <label for="genm2">MPB</label><br>
+                <label for="genm2"><span class="tooltip">MPB<span class="tooltiptext">Musica Popular Brasileira</span></span></label><br>
                 <input type="radio" name="generomusical" id="genm3" value="POP"> 
                 <label for="genm3">POP</label><br>
                 <input type="radio" name="generomusical"  id="genm4" value="outro"> 
@@ -206,9 +171,43 @@ timer = setInterval(showRemaining, 1000);
             
         </div>
         <div>
-            <footer class="footer2">
+            <footer class="footer">
                 <h2 >&copy; Guilherme Araujo - BSI UNIRIO - 2021</h2>
-                
+                <div class="countdown">
+                    <p id="countdown"></p>
+                    </div>
+            <script>
+                var end = new Date('06/18/2021 10:1 AM');
+        
+        var _second = 1000;
+        var _minute = _second * 60;
+        var _hour = _minute * 60;
+        var _day = _hour * 24;
+        var timer;
+        
+        function showRemaining() {
+            var now = new Date();
+            var distance = end - now;
+            if (distance < 0) {
+        
+                clearInterval(timer);
+                document.getElementById('countdown').innerHTML = 'EXPIRED!';
+        
+                return;
+            }
+            var dias = Math.floor(distance / _day);
+            var hours = Math.floor((distance % _day) / _hour);
+            
+        
+            document.getElementById('countdown').innerHTML = dias + ' dias ';
+            document.getElementById('countdown').innerHTML += hours + ' hrs ';
+            
+        }
+        
+        timer = setInterval(showRemaining, 1000);
+                </script>
+
+                </div>
              </footer>
             </div>
             <script>
