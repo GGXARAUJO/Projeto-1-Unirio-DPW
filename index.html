@@ -67,7 +67,15 @@
 
                                
         </div>
-        
+        <script>
+            function escreve_semana()
+             {
+             nome = ["Domingo", "Segunda-Feira", "Terça-Feira", "QuartaFeira", "Quinta-Feira", "Sexta-Feira", "Sábado"];
+             hoje = new Date();
+             dia = hoje.getDay();
+             document.write(nome[dia]);
+             }
+             </script>
            
         <h3 class="titulo1">Conheca nossos principais produtos nacionais e internacionais.</h3>
         <div id="bordaimg" class="row" class="grow">
@@ -94,7 +102,9 @@
         </div>
 
         
-        <div>
+        <div class="nivel
+        
+        ">
             <h3 class="titulo1">E para mantermos o maior nível de qualidade possível, trabalhamos considerando os itens:</h3>
 
             <ol type="I" class="lo">
@@ -138,7 +148,7 @@
         else if (dia > 10 || dia <=20)
         dia = document.body.style.backgroundColor = "#5B5EA6"; // vermelho
         else if (dia >20)
-        dia = document.body.style.backgroundColor= "#00FF00"; // verde
+        dia = document.body.style.backgroundColor= "#FFB6C1"; // verde
 
 
 

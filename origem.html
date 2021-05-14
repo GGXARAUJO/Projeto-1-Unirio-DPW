@@ -103,7 +103,7 @@
 
     
 
-    
+    <div class="vinilimg">
         <h3 id="como" class="titulo1">Como é feito o disco de vinil</h3>
         <p class="letraref">Antes de gravar no vinil, é necessário fazer um molde do disco, que é chamado de matriz. Esse molde começa com um disco de alumínio, que é cortado no tamanho correto e polido para ficar bem liso. 
 
@@ -114,11 +114,11 @@
 
         </p>
 
-
+    </div>
     
 
         
-    <div>
+    <div class="vinilimg">
         <h3 id="declinio" class="titulo1">
             Declínio e o começo do <span class="tooltip">CD<span class="tooltiptext">"compact disc"</span></span>
         </h3>
@@ -131,7 +131,7 @@
 
             Entretanto, em 2014, o inesperado aconteceu.  </p>
         </div>
-        <div>
+        <div class="vinilimg">
 
         <h3 id="retorno" class="titulo1">
             Retorno
@@ -144,6 +144,45 @@
         <footer class="footer">
             <h2 >&copy; Guilherme Araujo - BSI UNIRIO - 2021</h2>
             
+            <div class="countdown">
+                <p> faltam </p>
+                <p id="countdown"></p>
+                <p> para o proximo evento</p>
+            </div>    
+                
+        <script>
+            var end = new Date('05/15/2021 10:1 AM');
+    
+    var _second = 1000;
+    var _minute = _second * 60;
+    var _hour = _minute * 60;
+    var _day = _hour * 24;
+    var timer;
+    
+    function showRemaining() {
+        var now = new Date();
+        var distance = end - now;
+        if (distance < 0) {
+    
+            clearInterval(timer);
+            document.getElementById('countdown').innerHTML = 'EXPIRED!';
+    
+            return;
+        }
+        var dias = Math.floor(distance / _day);
+        var hours = Math.floor((distance % _day) / _hour);
+        var minutes = Math.floor((distance % _hour) / _minute);
+        var seconds = Math.floor((distance % _minute) / _second);
+    
+        document.getElementById('countdown').innerHTML = dias + 'dias ';
+        document.getElementById('countdown').innerHTML += hours + 'hrs ';
+        document.getElementById('countdown').innerHTML += minutes + 'mins ';
+        document.getElementById('countdown').innerHTML += seconds + 'secs';
+    }
+    
+    timer = setInterval(showRemaining, 1000);
+            </script>
+            </div>
          </footer>
          <script>
             hoje = new Date();
