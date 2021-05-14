@@ -11,35 +11,37 @@
 <body>
     
 
-        <div id="page-container">
-
-            <nav id="titulo">
-                <a href="index.html"> <img class="logo" src="img/logo.jpg" alt="Loja DISCOO" ></a>
-            <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-    
-                <li>
-                    <a href="origem.html">Origem</a>
-                </li>
-    
-                <li>
-                    <a href="quiz.html">Quiz</a>
-                </li>
-    
-                <li>
-                    <a href="referencias.html">Referencias</a>
-                </li>
-    
-            </ul>
+    <header class="main-header">
+        <div class="container">
+            <h1 class="mh-logo">
+                <a href="index.html"> <img class="logo" src="img/logo.png" alt="Loja DISCOO"></a>
+            </h1>
+            <nav class="main-nav">
+                <ul class="main-nav-list">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+        
+                    <li>
+                        <a href="origem.html">Origem</a>
+                    </li>
+        
+                    <li>
+                        <a href="quiz.html">Quiz</a>
+                    </li>
+        
+                    <li>
+                        <a href="referencias.html">Referencias</a>
+                    </li>
+                </ul>
             </nav>
         </div>
+    </header>
         
 
         <div>
-            <form > 
-                <div>
+            <form> 
+                <div class="formulario">
                     
                 <h2>Qual é o genero musical que você mais gosta ?</h2>
             
@@ -54,7 +56,7 @@
             
             </div>
            
-            <div>
+            <div class="formulario">
                 
                 <h2>Qual é o genero que voce menos gosta ? </h2>
                 <input type="radio" name="generomusical" id="genm1" value="Rock" checked>
@@ -68,7 +70,7 @@
                 
             </div>
 
-            <div>
+            <div class="formulario">
                 <h2>Qual das seguintes palavras você usaria para descrever nosso produto?  </h2>
                 <input type="radio" name="generodmdusical" id="guenma1" value="Rock" checked>
                 <label for="guenma1">Impressionante</label><br>
@@ -81,7 +83,7 @@
                 
             </div>
 
-            <div>
+            <div class="formulario">
                 <h2>Voce achou o disco que precisava? </h2>
                 <input type="radio" name="dgenerodmdusical" id="genima1" value="Rock" checked>
                 <label for="genima1">Sim,uma parte</label><br>
@@ -94,7 +96,7 @@
 
             </div>
 
-            <div>
+            <div class="formulario">
                 <h2>Esta foi a primeira vez que você visitou o site? </h2>
                 <input type="radio" name="dgenerodmdusicald" id="igenma1" value="Rock" checked>
                 <label for="igenma1">Sim</label><br>
@@ -104,7 +106,7 @@
 
             </div>
 
-            <div>
+            <div class="formulario">
                 <h2>Qual é a probabilidade de você visitar o site novamente? </h2>
                 <input type="radio" name="dgenerodmduiseical" id="lgenma1" value="Rock" checked>
                 <label for="lgenma1">Provável</label><br>
@@ -117,7 +119,7 @@
                 
 
             </div>
-            <div>
+            <div class="formulario">
                 <h2>Na sua opinião, qual área do produto precisa ser aprimorada? Embalagem, Entrega, Preço, outros. </h2>
                 <input type="radio" name="dgenerodmduseical" id="ge0nma1" value="Rock" checked>
                 <label for="ge0nma1">Embalagem</label><br>
@@ -131,7 +133,7 @@
 
             </div>
 
-            <div>
+            <div class="formulario">
                 <h2>Você gostou da embalagem do produto? </h2>
                 <input type="radio" name="dgenedrodmdusicald" id="gdenma1" value="Rock" checked>
                 <label for="gdenma1">Sim</label><br>
@@ -141,7 +143,7 @@
 
             </div>
 
-            <div>
+            <div class="formulario">
                 <h2>Você gostou da variedade de discos?</h2>
                 <input type="radio" name="dgenedrodmdjusicald" id="gemnma1" value="Rock" checked>
                 <label for="gemnma1">Sim</label><br>
@@ -150,7 +152,7 @@
                 
 
             </div>
-            <div>
+            <div class="formulario">
                 <h2>Qual é o fator que mais te influencia na sua decisão de compra?</h2>
                 <input type="radio" name="dgenerodmduseicael" id="genmao1" value="Rock" checked>
                 <label for="genmao1">Preço</label><br>
@@ -183,7 +185,7 @@
                 if (dia <= 10)
                 dia = document.body.style.backgroundColor = "#FFFFFF"; // branco
                 else if (dia > 10 || dia <=20)
-                dia = document.body.style.backgroundColor = "#FF0000"; // vermelho
+                dia = document.body.style.backgroundColor = "#5B5EA6"; // vermelho
                 else if (dia >20)
                 dia = document.body.style.backgroundColor= "#00FF00"; // verde
      
