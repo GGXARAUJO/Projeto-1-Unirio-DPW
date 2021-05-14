@@ -67,6 +67,7 @@
 
                                
         </div>
+    </main>
         <script>
             function escreve_semana()
              {
@@ -76,32 +77,34 @@
              document.write(nome[dia]);
              }
              </script>
-           
+            
+             <section>  
         <h3 class="titulo1">Conheca nossos principais produtos nacionais e internacionais.</h3>
-        <div id="bordaimg" class="row" class="grow">
+        <div id="bordaimg" class="row" >
         
-            <div class="discos" class="grow">
+            <div class="discos" >
                 <img  src="img/chico.jpg" alt="Chico Buarque-Construcao" title="Chico Buarque - Construçao">
                 <p>Chico Buarque - Construcao</p>
             </div>
 
-            <div class="discos" class="grow">
+            <div class="discos" >
                 <img   src="img/iggy.jpg" alt="IggyPOP" title="Iggy Pop - Rock Action">
                 <p>Iggy Pop - Rock Action</p>
             </div>
 
-            <div class="discos" class="grow">
+            <div class="discos" >
                 <img  src="img/nb.jpg" alt="NovosBaianos" title="Novos Baianos - Acabou Chorare">
                 <p>Novos Baianos - Acabou Chorare</p>
             </div>
 
-            <div class="discos" class="grow">
+            <div class="discos" >
                 <img  src="img/badmj.jpg" alt="MichaelJackson" title="Bad - Michael Jackson">
                 <p>Bad - Michael Jackson</p>
             </div>
         </div>
+    </section>
 
-        
+<section>
         <div class="nivel
         
         ">
@@ -124,7 +127,9 @@
             </ol>
 
         </div>
-    </main>
+
+    </section>
+    
 
 
 
@@ -133,7 +138,41 @@
 <div>
     <footer class="footer">
        <h2 >&copy; Guilherme Araujo - BSI UNIRIO - 2021</h2>
-       
+       <div class="countdown">
+        <p class="countdown"> .  pro aniversario de Paul McCartney, dia do nosso evento dos Beatles. </p>
+        <p class="countdown" id="countdown"></p>
+        <p class="countdown">Faltam:   </p>
+        </div>
+<script>
+    var end = new Date('06/18/2021 10:1 AM');
+
+var _second = 1000;
+var _minute = _second * 60;
+var _hour = _minute * 60;
+var _day = _hour * 24;
+var timer;
+
+function showRemaining() {
+var now = new Date();
+var distance = end - now;
+if (distance < 0) {
+
+    clearInterval(timer);
+    document.getElementById('countdown').innerHTML = 'EXPIRED!';
+
+    return;
+}
+var dias = Math.floor(distance / _day);
+var hours = Math.floor((distance % _day) / _hour);
+
+
+document.getElementById('countdown').innerHTML = dias + ' dias e ';
+document.getElementById('countdown').innerHTML += hours + '  horas ';
+
+}
+
+timer = setInterval(showRemaining, 1000);
+    </script>
     </footer>
     
     </div>
@@ -144,11 +183,11 @@
         ano = hoje.getYear();
 
         if (dia <= 10)
-        dia = document.body.style.backgroundColor = "#FFFFFF"; // branco
+        dia = document.body.style.backgroundColor = "#E8E8E8"; // gray
         else if (dia > 10 || dia <=20)
-        dia = document.body.style.backgroundColor = "#5B5EA6"; // vermelho
+        dia = document.body.style.backgroundColor = "#5B5EA6"; // roxo#5B5EA6
         else if (dia >20)
-        dia = document.body.style.backgroundColor= "#FFB6C1"; // verde
+        dia = document.body.style.backgroundColor= "#CAE1FF"; // lightblue
 
 
 

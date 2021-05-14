@@ -41,15 +41,15 @@
         
             <div class="slideshow-container">
               <div class="mySlides1">
-                <img src="img/img1.jpg" style="width:100%">
+                <img src="img/img1.jpg" alt="disco vinil" style="width:100%">
               </div>
             
               <div class="mySlides1">
-                <img src="img/img2.jpg" style="width:100%">
+                <img src="img/img2.jpg" alt="disco vinil" style="width:100%">
               </div>
             
               <div class="mySlides1">
-                <img src="img/img3.jpg" style="width:100%">
+                <img src="img/img3.jpg" alt="disco vinil" style="width:100%">
               </div>
             
               <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
@@ -82,6 +82,7 @@
         
     </div>
 
+<section>
 <div class="vinilimg">
 <h3 id="historia"  class="titulo1">Historia do Disco de vinil</h3>
 
@@ -93,11 +94,12 @@
 </p>
 
 </div>
+</section>
     
 
 
-    
-
+  
+<section>
     <div class="vinilimg">
         <h3 id="como" class="titulo1">Como é feito o disco de vinil</h3>
         <p class="letraref">Antes de gravar no vinil, é necessário fazer um molde do disco, que é chamado de matriz. Esse molde começa com um disco de alumínio, que é cortado no tamanho correto e polido para ficar bem liso. 
@@ -110,9 +112,10 @@
         </p>
 
     </div>
+</section>
     
 
-        
+<section>
     <div class="vinilimg">
         <h3 id="declinio" class="titulo1">
             Declínio e o começo do <span class="tooltip">CD<span class="tooltiptext">"compact disc"</span></span>
@@ -126,6 +129,9 @@
 
             Entretanto, em 2014, o inesperado aconteceu.  </p>
         </div>
+
+</section>
+<section>    
         <div class="vinilimg">
 
         <h3 id="retorno" class="titulo1">
@@ -135,18 +141,17 @@
             O disco de vinil voltou a ganhar espaço no mercado norte-americano e se espalhou novamente pelo mundo. Apesar de nunca ter atingido as mesmas proporções que tinha no passado, o retorno fez com que gravadoras voltassem a produzir os LPs. Há quem fale que houve uma popularização do vinil no Brasil a partir de 2016, quando ele conquistou fãs e passou a ser mais usado pelos DJs. Porém, como o preço do disco ainda é pouco acessível, não se pode dizer que ele tenha um público tão grande por aqui.
         </p>
         </div>
+</section>        
         
         <footer class="footer">
             <h2 >&copy; Guilherme Araujo - BSI UNIRIO - 2021</h2>
-            
             <div class="countdown">
-                <p> faltam </p>
-                <p id="countdown"></p>
-                <p> para o proximo evento</p>
-            </div>    
-                
+                <p class="countdown"> .  pro aniversario de Paul McCartney, dia do nosso evento dos Beatles. </p>
+                <p class="countdown" id="countdown"></p>
+                <p class="countdown">Faltam:   </p>
+                </div>
         <script>
-            var end = new Date('05/15/2021 10:1 AM');
+            var end = new Date('06/18/2021 10:1 AM');
     
     var _second = 1000;
     var _minute = _second * 60;
@@ -166,18 +171,16 @@
         }
         var dias = Math.floor(distance / _day);
         var hours = Math.floor((distance % _day) / _hour);
-        var minutes = Math.floor((distance % _hour) / _minute);
-        var seconds = Math.floor((distance % _minute) / _second);
+        
     
-        document.getElementById('countdown').innerHTML = dias + 'dias ';
-        document.getElementById('countdown').innerHTML += hours + 'hrs ';
-        document.getElementById('countdown').innerHTML += minutes + 'mins ';
-        document.getElementById('countdown').innerHTML += seconds + 'secs';
+        document.getElementById('countdown').innerHTML = dias + ' dias e ';
+        document.getElementById('countdown').innerHTML += hours + '  horas ';
+        
     }
     
     timer = setInterval(showRemaining, 1000);
             </script>
-            </div>
+           
          </footer>
          <script>
             hoje = new Date();
@@ -186,11 +189,11 @@
             ano = hoje.getYear();
  
             if (dia <= 10)
-            dia = document.body.style.backgroundColor = "#FFFFFF"; // branco
+            dia = document.body.style.backgroundColor = "#E8E8E8"; // branco
             else if (dia > 10 || dia <=20)
             dia = document.body.style.backgroundColor = "#5B5EA6"; // vermelho
             else if (dia >20)
-            dia = document.body.style.backgroundColor= "#00FF00"; // verde
+            dia = document.body.style.backgroundColor= "#CAE1FF"; // verde
  
  
   

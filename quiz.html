@@ -35,10 +35,11 @@
                     </li>
                 </ul>
             </nav>
-            
+        </div>
+                      
     </header>
     
-   
+<main>
         <div>
             <form> 
                 <div class="formulario">
@@ -170,12 +171,16 @@
             </form>
             
         </div>
-        <div>
+    </main>
+        
             <footer class="footer">
                 <h2 >&copy; Guilherme Araujo - BSI UNIRIO - 2021</h2>
                 <div class="countdown">
-                    <p id="countdown"></p>
+                    <p class="countdown"> .  pro aniversario de Paul McCartney, dia do nosso evento dos Beatles. </p>
+                    <p class="countdown" id="countdown"></p>
+                    <p class="countdown">Faltam:   </p>
                     </div>
+                    </footer>
             <script>
                 var end = new Date('06/18/2021 10:1 AM');
         
@@ -199,17 +204,17 @@
             var hours = Math.floor((distance % _day) / _hour);
             
         
-            document.getElementById('countdown').innerHTML = dias + ' dias ';
-            document.getElementById('countdown').innerHTML += hours + ' hrs ';
+            document.getElementById('countdown').innerHTML = dias + ' dias e ';
+            document.getElementById('countdown').innerHTML += hours + '  horas ';
             
         }
         
         timer = setInterval(showRemaining, 1000);
                 </script>
 
-                </div>
-             </footer>
-            </div>
+                
+             
+            
             <script>
                 hoje = new Date();
                 dia = hoje.getDate();
@@ -217,11 +222,11 @@
                 ano = hoje.getYear();
      
                 if (dia <= 10)
-                dia = document.body.style.backgroundColor = "#FFFFFF"; // branco
+                dia = document.body.style.backgroundColor = "#E8E8E8"; // branco
                 else if (dia > 10 || dia <=20)
                 dia = document.body.style.backgroundColor = "#5B5EA6"; // vermelho
                 else if (dia >20)
-                dia = document.body.style.backgroundColor= "#00FF00"; // verde
+                dia = document.body.style.backgroundColor= "#CAE1FF"; // verde
      
      
       

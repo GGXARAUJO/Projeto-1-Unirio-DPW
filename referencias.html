@@ -38,18 +38,21 @@
         </div>
     </header>
         
-
+     <main>
+    <section>
         <div class="imgbea">
             <h3 class="titulo1">Os Discos $$</h3>
             
-            <p class="letraref" >A Recording Industry Association of America, associação que representa as gravadoras dos Estados Unidos, criou um ranking com os artistas que mais venderam álbuns durante toda a história da música. Foram levados em consideração apenas discos certificados e comercializados nos Estados Unidos. Embora a seleção tenha sido feita no país americano, o primeiro lugar é ocupado por uma banda da “Terra da rainha”: os Beatles. Já a segunda colocação ficou a cargo do cantor de música country Garth Brooks, seguido do imortal Elvis Presley. Além deles, a lista também contempla artistas de outros estilos musicais, do pop com Britney Spears, ao rap com Tupac Shakur e Eminem.
+            <p class="letraref" >A Recording Industry Association of America, associação que representa as gravadoras dos<span class="tooltip">EUA<span class="tooltiptext">Estados Unidos da América</span></span>, criou um ranking com os artistas que mais venderam álbuns durante toda a história da música. Foram levados em consideração apenas discos certificados e comercializados nos Estados Unidos. Embora a seleção tenha sido feita no país americano, o primeiro lugar é ocupado por uma banda da “Terra da rainha”: os Beatles. Já a segunda colocação ficou a cargo do cantor de música country Garth Brooks, seguido do imortal Elvis Presley. Além deles, a lista também contempla artistas de outros estilos musicais, do pop com Britney Spears, ao rap com Tupac Shakur e Eminem.
             </p> 
-            <img  src="img/dicou.gif" alt="Michael Jackson comendo pipoca" style= " float: left; margin-right: 20px; border-radius: 100px; border-style: double; border-color: blueviolet; padding-top:60px; padding-bottom:60px;">
-            
+            <div class="imgbia">
+            <img src="img/dicou.gif" alt="Disco Vinil girando" >
+        </div>
            
             
         </div>
-
+    </section>
+    <section>
 <div class="imgbea">
     <h3 class="titulo1">
         Michael Jackson
@@ -57,9 +60,12 @@
     <p class="letraref">Ele e foi a última espécie de super ídolos do pop. Vendeu muito. Mas, pelo que o Wall Street Journal descobriu, ninguém sabe exatamente quantos álbuns Michael Jackson vendeu — certamente estimam-se 750 milhões. Veja, na pré-história, quando as vendas de discos nos<span class="tooltip">EUA<span class="tooltiptext">Estados Unidos da América</span></span> não eram eletronicamente contabilizadas pelo Nielsen SoundScan (1991), as coisas funcionavam na base do chute.
         No Guinness, por exemplo, está escrito que é impossível saber ao certo quantos discos Michael Jackson vendeu. Mas que Thriller é, de acordo com todas as estimativas, o disco mais vendido de todos os tempos. É que antes os únicos dados disponíveis eram o número de cópias mandados pela gravadora para as lojas e as paradas de sucesso. Aliás, as paradas da Billboard eram bem bagunçadas nos dias pré-eletrônicos: elas usavam rankings, não números reais de vendas, presumindo que todos os discos na parada tinham espaçamento igual entre eles, não importa quão grande a distância realmente era.
     </p> <br>
-    <p class="letraref"> Assista um dos maiores sucessos do Michael Jackson,<a href="https://www.youtube.com/watch?v=dsUXAEzaC3Q" target="_blank" alt="Michael Jackson comendo pipoca"  onmouseover="img.style.visibility='visible'; img.src='img/giphy.gif';" onmouseout="img.style.visibility='hidden';"> clique aqui.</a></p>
+    <p class="letraref"> Assista um dos maiores sucessos do Michael Jackson,<a href="https://www.youtube.com/watch?v=dsUXAEzaC3Q" target="_blank"  onmouseover="img.style.visibility='visible'; img.src='img/giphy.gif';" onmouseout="img.style.visibility='hidden';"> clique aqui.</a></p>
     
 </div>
+</section>
+
+<section>
 <div class="imgbea">
     <h3 class="titulo1"> 
 The Beatles
@@ -71,8 +77,9 @@ The Beatles
         Os Beatles é considerada a banda mais aclamada da história da música popular. Formado na Inglaterra em 1960, o grupo era composto por John Lennon, Paul McCartney, George Harrison e Ringo Starr. Os 13 álbuns lançados por eles foram amplamente difundidos em diversos países, tornando os garotos de Liverpool um fenômeno internacional.
     </p>
     <br>
-    <p class="letraref"> Assista um dos maiores sucessos do The Beatles,<a href="https://www.youtube.com/watch?v=2Q_ZzBGPdqE" target="_blank" alt="TheBeatles"  onmouseover="img.style.visibility='visible'; img.src='img/beatle.gif';" onmouseout="img.style.visibility='hidden';"> clique aqui.</a></p>
-    
+    <p class="letraref"> Assista um dos maiores sucessos do The Beatles,<a href="https://www.youtube.com/watch?v=2Q_ZzBGPdqE" target="_blank"  onmouseover="img.style.visibility='visible'; img.src='img/beatle.gif';" onmouseout="img.style.visibility='hidden';"> clique aqui.</a></p>
+</div>
+</section>
     <script>
 
         var img;
@@ -85,10 +92,10 @@ The Beatles
         </script>
         
      
-     
+    </main>
      
 
-</div>
+
 
     <table>
         <caption class="dis">Discos mais vendidos de todos os tempos.</caption>
@@ -125,7 +132,41 @@ The Beatles
     </table>
     <footer class="footer">
         <h2 >&copy; Guilherme Araujo - BSI UNIRIO - 2021</h2>
-        
+        <div class="countdown">
+            <p class="countdown"> .  pro aniversario de Paul McCartney, dia do nosso evento dos Beatles. </p>
+            <p class="countdown" id="countdown"></p>
+            <p class="countdown">Faltam:   </p>
+            </div>
+    <script>
+        var end = new Date('06/18/2021 10:1 AM');
+
+var _second = 1000;
+var _minute = _second * 60;
+var _hour = _minute * 60;
+var _day = _hour * 24;
+var timer;
+
+function showRemaining() {
+    var now = new Date();
+    var distance = end - now;
+    if (distance < 0) {
+
+        clearInterval(timer);
+        document.getElementById('countdown').innerHTML = 'EXPIRED!';
+
+        return;
+    }
+    var dias = Math.floor(distance / _day);
+    var hours = Math.floor((distance % _day) / _hour);
+    
+
+    document.getElementById('countdown').innerHTML = dias + ' dias e ';
+    document.getElementById('countdown').innerHTML += hours + '  horas ';
+    
+}
+
+timer = setInterval(showRemaining, 1000);
+        </script>
      </footer>
      <script>
         hoje = new Date();
@@ -134,11 +175,11 @@ The Beatles
         ano = hoje.getYear();
 
         if (dia <= 10)
-        dia = document.body.style.backgroundColor = "#FFFFFF"; // branco
+        dia = document.body.style.backgroundColor = "#E8E8E8"; // branco
         else if (dia > 10 || dia <=20)
         dia = document.body.style.backgroundColor = "#5B5EA6"; // vermelho
         else if (dia >20)
-        dia = document.body.style.backgroundColor= "#00FF00"; // verde
+        dia = document.body.style.backgroundColor= "#CAE1FF"; // verde
 
 
 

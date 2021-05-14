@@ -186,11 +186,13 @@ h3{
    
 }
 .countdown {
+  
   position: static;
-  font-style: italic;
-  font-size: 15px;
+  font-style: inherit ;
+  font-size: 18px;
   float: right;
   text-align: center;
+  color: rgb(255, 233, 233);
   
 }
 
@@ -299,8 +301,8 @@ margin: 50px;
 }
 
 .texco {
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0, 0.4); 
   color: rgb(233, 224, 241);
   font-weight: bold;
   border: 3px solid #f1f1f1;
@@ -318,7 +320,7 @@ margin: 50px;
             .mySlides1, .mySlides2 {display: none}
             img {vertical-align: middle;}
             
-            /* Slideshow container */
+           
             .slideshow-container {
               max-width: 1000px;
               position: relative;
@@ -326,7 +328,7 @@ margin: 50px;
               padding-top: 50px;
             }
             
-            /* Next & previous buttons */
+            
             .prev, .next {
               cursor: pointer;
               position: absolute;
@@ -342,13 +344,13 @@ margin: 50px;
               user-select: none;
             }
             
-            /* Position the "next button" to the right */
+           
             .next {
               right: 0;
               border-radius: 3px 0 0 3px;
             }
             
-            /* On hover, add a grey background color */
+            
             .prev:hover, .next:hover {
               background-color: #f1f1f1;
               color: black;
@@ -381,10 +383,7 @@ margin: 50px;
  
 
 }
-/**
- * Limit the container in
- * width for big screens
- */
+
  .container {
 	width: 960px;
 	max-width: 100%;
@@ -392,17 +391,7 @@ margin: 50px;
 	margin: 0 auto;
 }
 
-/**
- * By using display: flex
- * Logo and nav are in 2 cols
- * align-items make them
- * vertically centered
- * justify-content distribute
- * horizontal spaces around
- * and flex-wrap break the
- * things in two lines in
- * small screens
- */
+
 .main-header .container {
 	display: flex;
   
@@ -412,12 +401,7 @@ margin: 50px;
   
 }
 
-/**
- * The followings are to
- * make things more
- * clean and airy
- * and contents centered
- */
+
 .main-nav ul {
 	margin: 1em 0 .5em;
 	text-align: center;
